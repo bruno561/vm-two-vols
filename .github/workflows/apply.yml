@@ -1,18 +1,18 @@
-name: 'Plan'
+name: 'Apply'
 
 on:
-  pull_request:
+  push:
     branches: [ main ]
     paths:
       - 'vm-two-vols/**'
 
 jobs:
   terraform:
-    name: 'plan'
+    name: 'apply'
     env:
       GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS_TF }}
     runs-on: ubuntu-latest
-    environment: plan
+    environment: apply
 
     defaults:
       run:
@@ -34,8 +34,8 @@ jobs:
     - name: Terragrunt Validate
       run: terragrunt run-all validate
 
-    - name: Terragrunt Plan
-      run: terragrunt run-all plan
+    - name: Terragrunt Apply
+      run: terragrunt run-all apply --terragrunt-non-interactive
 
       env:
         TF_VAR_mssql_user_name_root:          ${{ secrets.TF_VAR_administrator_login_db }}
