@@ -2,6 +2,11 @@ name: 'Destroy'
 
 on:
   workflow_dispatch:
+   inputs:
+      dir:
+        description: 'Directory with resources to be destroyed'
+        required: true
+        default: 'vm-two-vols'
 
 jobs:
   terraform:
