@@ -37,7 +37,7 @@ jobs:
       run: terragrunt run-all validate
 
     - name: Terragrunt Plan
-      run: terragrunt run-all destroy --auto-approve
+      run: terragrunt run-all destroy --terragrunt-non-interactive
 
       env:
         TF_VAR_mssql_user_name_root:          ${{ secrets.TF_VAR_administrator_login_db }}
