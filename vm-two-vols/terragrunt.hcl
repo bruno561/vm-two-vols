@@ -15,7 +15,7 @@ inputs = {
     compute_name = "linux"
     machine_type = "e2-micro"
     disk_type = "pd-standard"
-    disk_size = "50"
+    disk_size = "10"
     image = "ubuntu-2004-focal-v20221018"
     external_ip = false
 }
