@@ -1,5 +1,5 @@
 terraform {
-  source = "git::https://git@github.com/brunopsantos93/module_gcp_vm.git//modules/gce?ref=v0.0.36"
+  source = "git::https://git@github.com/brunopsantos93/module_gcp_vm.git//modules/gce?ref=v0.0.37"
 }
 
 include "root" {
