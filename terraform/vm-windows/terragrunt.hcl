@@ -14,12 +14,12 @@ inputs = {
     vpc_subnetwork = "default"
     compute_name = "windows"
     machine_type = "e2-medium"
-    disk_type = "pd-ssd"
+    disk_type = "pd-balanced"
     disk_size = "50"
     image = "windows-server-2022-dc-v20221107"
     external_ip = false
     secondary_disk = true
     secondary_disk_name = "secondary-disk"
     secondary_disk_size = "50"
-    secondary_disk_type = "pd-ssd"
+    secondary_disk_type = "pd-balanced"
 }

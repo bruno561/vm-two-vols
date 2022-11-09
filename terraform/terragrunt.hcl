@@ -8,6 +8,6 @@ remote_state {
     project                = "development-367511"
     location               = "us-east4"
     bucket                 = "terraform-brunolabs-us-east4"
-    prefix                 = "${path_relative_to_include()}/terraform.tfstate"
+    prefix                 = "terraform/${path_relative_to_include()}/terraform.tfstate"
   }
 }
