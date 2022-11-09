@@ -18,5 +18,5 @@ inputs = {
     disk_size = "10"
     image = "ubuntu-2004-focal-v20221018"
     external_ip = true
-    secondary_disk = 1
+    secondary_disk = "1"
 }
