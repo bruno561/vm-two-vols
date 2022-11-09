@@ -1,5 +1,5 @@
 terraform {
-  source = "git::https://git@github.com/brunopsantos93/module_gcp_vm.git//modules/gce?ref=v0.0.40"
+  source = "git::https://git@github.com/brunopsantos93/module_gcp_vm.git//modules/gce?ref=v0.0.41"
 }
 
 include "root" {
@@ -18,5 +18,5 @@ inputs = {
     disk_size = "10"
     image = "ubuntu-2004-focal-v20221018"
     external_ip = true
-    secondary_disk = "secondary"
+    secondary_disk = true
 }
