@@ -19,7 +19,7 @@ inputs = {
     image = "windows-server-2012-r2-dc-v20221014"
     external_ip = false
     secondary_disk = true
-    # secondary_disk_name = "secondary-disk"
+    # secondary_disk_name = "secondary-disk-1"
     # secondary_disk_size = "20"
     # secondary_disk_type = "pd-balanced"
 }
