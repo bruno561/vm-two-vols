@@ -1,5 +1,5 @@
 terraform {
-  source = "git::https://git@github.com/brunopsantos93/module_gcp_vm.git//modules/gce?ref=v0.0.46"
+  source = "git::https://git@github.com/brunopsantos93/module_gcp_vm.git//modules/gce?ref=v0.0.49"
 }
 
 include "root" {
@@ -14,9 +14,12 @@ inputs = {
     vpc_subnetwork = "default"
     compute_name = "linux-1"
     machine_type = "e2-micro"
-    disk_type = "pd-standard"
+    disk_type = "pd-balanced"
     disk_size = "10"
     image = "ubuntu-2004-focal-v20221018"
-    external_ip = true
+    external_ip = false
     secondary_disk = true
+    # secondary_disk_name = "secondary-disk"
+    # secondary_disk_size = "20"
+    # secondary_disk_type = "pd-balanced"
 }
