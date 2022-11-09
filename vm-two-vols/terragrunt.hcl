@@ -9,7 +9,7 @@ include "root" {
 inputs = {
     project = "development-367511"
     region = "us-east4"
-    zone = "us-east4-a"
+    zone = "us-east4-c"
     vpc_network = "default"
     vpc_subnetwork = "default"
     compute_name = "windows-1"
