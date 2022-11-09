@@ -19,4 +19,7 @@ inputs = {
     image = "ubuntu-2004-focal-v20221018"
     external_ip = false
     secondary_disk = false
+    secondary_disk_name = "secondary-disk"
+    secondary_disk_size = "10"
+    secondary_disk_type = "pd-balanced"
 }
