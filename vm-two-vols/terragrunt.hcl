@@ -15,11 +15,11 @@ inputs = {
     compute_name = "windows"
     machine_type = "e2-highmem-8"
     disk_type = "pd-balanced"
-    disk_size = "100"
+    disk_size = "50"
     image = "windows-server-2022-dc-v20221107"
     external_ip = true
     secondary_disk = true
     secondary_disk_name = "secondary-disk-1"
-    secondary_disk_size = "400"
+    secondary_disk_size = "50"
     secondary_disk_type = "pd-balanced"
 }
