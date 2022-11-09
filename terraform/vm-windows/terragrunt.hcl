@@ -1,5 +1,5 @@
 terraform {
-  source = "git::https://git@github.com/brunopsantos93/module_gcp_vm.git//modules/gce?ref=v0.0.49"
+  source = "git::https://git@github.com/brunopsantos93/module_gcp_vm.git//modules/gce?ref=v0.0.54"
 }
 
 include "root" {
@@ -18,7 +18,6 @@ inputs = {
     disk_size = "50"
     image = "windows-server-2022-dc-v20221107"
     external_ip = false
-    secondary_disk = true
     secondary_disk_name = "secondary-disk"
     secondary_disk_size = "50"
     secondary_disk_type = "pd-balanced"
