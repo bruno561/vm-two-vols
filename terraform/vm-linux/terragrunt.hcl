@@ -1,5 +1,5 @@
 terraform {
-  source = "git::https://git@github.com/brunopsantos93/module_gcp_vm.git//modules/gce?ref=v0.0.60"
+  source = "git::https://git@github.com/brunopsantos93/module_gcp_vm.git//modules/gce?ref=main"
 }
 
 include "root" {
@@ -18,9 +18,9 @@ inputs = {
     disk_size = "50"
     image = "debian-11-bullseye-v20221102"
     external_ip = false
+    external_static_ip = false
     secondary_disk = true
     secondary_disk_name = "secondary-disk-linux"
     secondary_disk_size = "50"
     secondary_disk_type = "pd-balanced"
 }
-# test1
